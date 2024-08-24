@@ -74,7 +74,7 @@ input:disabled {
   color: var(--dark-grey);
 }
 
-button {
+.btn-submit {
   border-radius: 8px;
   padding: 8px 16px;
   height: 40px;
@@ -87,11 +87,11 @@ button {
 
 }
 
-button:hover {
+.btn-submit:hover {
   background-color: var(--secondary-blue);
 }
 
-button:disabled {
+.btn-submit:disabled {
   background-color: var(--light-grey);
   color: var(--grey);
 }
