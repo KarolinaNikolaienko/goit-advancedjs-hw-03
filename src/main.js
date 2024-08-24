@@ -15,11 +15,11 @@ formElem.addEventListener("submit", (event) => {
     const form = event.target;
     const searchQuery = form.elements.query.value;
     // Show loading message
-    const loadParagraph = document.querySelector(".load-paragraph");
-    loadParagraph.classList.remove("hidden");
+    const loader = document.querySelector(".loader");
+    loader.classList.remove("hidden");
     searchImages(searchQuery)
         .then((images) => {
-            loadParagraph.classList.add("hidden");
+            loader.classList.add("hidden");
             if (!images.hits.length) {
                 iziToast.error({
                     class: "error-alert",
